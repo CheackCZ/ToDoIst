@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Task"
+        android:textColor="@color/Yellow"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="1dp"
+        android:background="@color/Gray"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <EditText
+            android:id="@+id/editTextTitle_bottomSheet"
+            android:layout_width="380dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Yellow"
+            android:enabled="false"
+            android:gravity="left"
+            android:hint="Title"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvDate_bottomSheet"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="115dp"
+            android:background="@drawable/tv_rounded_corners"
+            android:gravity="center"
+            android:textColor="@color/Yellow"
+            android:textSize="15sp"
+            android:hint="Date"
+            android:textColorHint="@color/gray"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTime_bottomSheet"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/tv_rounded_corners"
+            android:gravity="center"
+            android:hint="Time"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/Yellow"
+            android:textSize="15sp"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etDescription_bottomSheet"
+            android:layout_width="375dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/Yellow"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="left"
+            android:hint="Description"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.325" />
+
+        <TextView
+            android:id="@+id/tvPriority_bottomSheet"
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="165dp"
+            android:gravity="center"
+            android:text="Priority:"
+            android:textColor="@color/Yellow"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.291"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_bottomSheet"
+            android:layout_width="135dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="165dp"
+            android:numStars="3"
+            android:progressBackgroundTint="@color/black"
+            android:progressTint="@color/Yellow"
+            android:scaleX="0.3"
+            android:scaleY="0.3"
+            android:stepSize="1"
+            android:scrollbarSize="10dp"
+            android:isIndicator="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="40dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="164dp"
+            android:backgroundTint="@color/Gray"
+            android:drawableTop="@drawable/ic_baseline_done_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonEditTask"
+            android:layout_width="40dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="164dp"
+            android:backgroundTint="@color/Gray"
+            android:drawableTop="@drawable/ic_baseline_edit_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentTask"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8000000"
+    android:backgroundTint="#E6000000"
+    tools:context=".FragmentTaskFullFill">
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="#D3C235"
+        android:ems="10"
+        android:foregroundTint="#FFFFFF"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addTaskButton"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="485dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#D3C235"
+        android:text="Edit"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="485dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#000000"
+        android:text="Cancel"
+        android:textColor="#D3C235"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/addTaskButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/describtionEditText"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#D3C235"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleEditText" />
+
+    <Button
+        android:id="@+id/setDateButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#D3C235"
+        android:drawableTop="@drawable/ic_calendar"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/describtionEditText" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="225dp"
+        android:backgroundTint="#D3C235"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="date"
+        android:textColor="#FFFFFF"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#D3C235"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:onClick="TimePicker"
+        android:textColor="#FFFFFF"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <Button
+        android:id="@+id/setTimeButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#D3C235"
+        android:drawableTop="@drawable/ic_time"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/describtionEditText" />
+
+    <TextView
+        android:id="@+id/textPriority"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="372dp"
+        android:background="#D3C235"
+        android:backgroundTint="#D3C235"
+        android:gravity="center"
+        android:text="Priority:"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:windowSoftInputMode="adjustPan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Yellow"
+        android:backgroundTint="@color/Yellow"
+        android:foregroundTint="#000000"
+        android:text="    Edit Task"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="202dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="532dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="365dp"
+        android:numStars="3"
+        android:progressBackgroundTint="@color/black"
+        android:progressTint="@color/Yellow"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:scrollbarSize="10dp"
+        android:stepSize="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
